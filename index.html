@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Infinite House — Episódio 16</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -14,7 +14,7 @@
     body {
       background-color: #000;
       color: #fff;
-      font-family: 'Press Start 2P', monospace;
+      font-family: 'VT323', monospace;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -26,13 +26,13 @@
     }
 
     h1 {
-      font-size: 1.2em;
-      margin-bottom: 0.5em;
+      font-size: 2.5em;
+      margin-bottom: 0.4em;
       letter-spacing: 1px;
     }
 
     h2 {
-      font-size: 0.8em;
+      font-size: 1.4em;
       opacity: 0.75;
       margin-bottom: 2em;
     }
@@ -40,14 +40,14 @@
     a {
       color: #aaa;
       text-decoration: none;
-      font-size: 0.8em;
+      font-size: 1.2em;
     }
 
     a:hover {
       color: #fff;
     }
 
-    /* --- EFEITO DE RUÍDO --- */
+    /* --- EFEITO DE RUÍDO MAIS VISÍVEL --- */
     .noise {
       position: absolute;
       top: 0;
@@ -56,7 +56,8 @@
       height: 100%;
       pointer-events: none;
       background: url('https://media.githubusercontent.com/media/thiagokpelo/static-noise/main/noise.gif') repeat;
-      opacity: 0.03;
+      opacity: 0.08;
+      mix-blend-mode: screen;
       z-index: 999;
     }
   </style>
@@ -65,7 +66,7 @@
   <div class="noise"></div>
 
   <h1>INFINITE HOUSE — Episódio 16</h1>
-  <h2>"GRANDES PESADELOS"</h2>
+  <h2>"+Grandes Pesadelos+"</h2>
   <a href="https://en.wikipedia.org/wiki/False_awakening" target="_blank">
     https://en.wikipedia.org/wiki/False_awakening
   </a>
