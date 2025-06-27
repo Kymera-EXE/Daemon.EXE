@@ -25,6 +25,8 @@
       padding: 40px 20px 20px 20px;
       border-radius: 12px;
       max-width: 800px;
+      /* Ajuste para permitir o container crescer conforme o texto */
+      max-height: none;
     }
 
     .ritual-image {
@@ -41,7 +43,7 @@
       white-space: pre-line;
     }
 
-    /* BLOCO DE TEXTO GRANDE */
+    /* BLOCO DE TEXTO GRANDE SEM SCROLL */
     .large-text {
       margin-top: 30px;
       padding: 20px;
@@ -54,11 +56,15 @@
       background-color: rgba(10, 5, 30, 0.4); /* fundo escuro translúcido */
       border-radius: 8px;
       text-align: left;
-      max-height: 300px;
-      overflow-y: auto;
+
+      overflow-x: hidden;       /* remove scroll horizontal */
+      word-wrap: break-word;    /* quebra palavras longas */
+      word-break: break-word;   /* ajuda na quebra */
+
+      max-height: none;         /* remove limite de altura */
+      overflow-y: visible;      /* remove scroll vertical */
     }
 
-    /* Formatação de parágrafos dentro do texto grande */
     .large-text p {
       text-indent: 1.5em;
       margin-top: 0;
